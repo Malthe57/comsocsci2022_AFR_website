@@ -1,14 +1,14 @@
 name = "project-website-template"
 license = "MIT"
 description = ""
-homepage = "https://github.com/peterampazzo/project-website-template"
+homepage = "https://github.com/Malthe57/project-website-template"
 tags = []
 features = []
 min_version = "0.1.0"
 
 [author]
-  name = "Pietro Rampazzo"
-  homepage = "github.com/peterampazzo"
+  name = "Aorta Boys"
+  homepage = "github.com/Malthe57"
 
 # If porting an existing theme
 [original]
