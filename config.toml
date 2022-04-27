@@ -1,10 +1,10 @@
-baseURL = "https://peterampazzo.github.io/project-website-template/"
+baseURL = "https://malthe57.github.io/comsocsci2022_AFR_website/"
 title = "Project Title"
 description = "This is a project description"
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Malthe Dohm Andersen", "Yucheng Fu", "Andreas Høst","Christian Ellehammer Andersen"]
+    authors = ["Malthe Dohm Andersen", "Yucheng Fu", "Andreas Høst"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
     github = "https://github.com/Malthe57/comsocsci2022_AFR_website"
