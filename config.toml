@@ -1,12 +1,12 @@
 baseURL = "https://malthe57.github.io/comsocsci2022_AFR_website/"
-title = "Project Title"
+title = "Amazon Food Reviews"
 description = "This is a project description"
 relativeURLs = true
 theme = "theme" 
 [params]
     authors = ["Malthe Dohm Andersen", "Yucheng Fu", "Andreas Høst"]
     notebook = "/explainer-notebook.html"
-    data = "https://drive.google.com"
+    data = "http://jmcauley.ucsd.edu/data/amazon/links.html"
     github = "https://github.com/Malthe57/comsocsci2022_AFR_website"
     [[params.nav]]
         label = "Data"
