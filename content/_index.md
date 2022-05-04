@@ -4,13 +4,39 @@ layout: single
 next: data-description
 ---
 
-Donec posuere justo at risus [efficitur convallis](#). Donec enim nibh, aliquet vel risus id, tincidunt consectetur felis. Proin porttitor odio a orci accumsan bibendum id at risus. Sed a posuere odio, ac lobortis augue. Maecenas aliquet ipsum vel libero dignissim, non aliquet justo eleifend. Fusce mollis, ante eget tincidunt imperdiet, mi ligula venenatis ex, ut pulvinar nunc ipsum tempus eros. Aliquam erat volutpat. Sed id _iaculis arcu_, sit amet varius libero. Etiam quis nisl pretium, eleifend quam nec, rutrum sapien. **Donec rutrum accumsan orci.**
+# Amazon reviews
+
+Amazon is the largest online retailer in the world. This means that they offer a large variety of products, across many categories, such as books, electronics and even food.
+
+Because there are so many products available on Amazon, a consumer needs a few metrics they can use to decide whether or not to buy something. 
+Amazon has both ratings (in stars out of 5) and text reviews, given by other comsumers. 
+If a cumstomer decides not to buy a given product, they can always look at some of the many "related products" that are recommended on each products page.
+
+To better understand the ratings and recommendations of Amazon, we looked into how the "related products" recommendations work as a network as well as the behavior of reviwers on the site. 
+We did this by looking at data of food products with the "Gourmet food and grocery" tag.
+
+## [Data](data-description)
+We used some data! Here it is.
 
 
-## Math formula
+[Click here](data-description) for a more in depth description of the data we used
 
 
-$$ x^n + y^n = z^n $$
+
+
+## [Network Analysis](network-analysis)
+We did some network analysis. We made two networks from the data using the networkx package and looked at community modality.
+We also made Louvain communities and compared them with the category-communities
+
+[Click here](network-analysis) to see what we did and how we did it.
+
+
+
+## [Text Analysis](text-analysis)
+We did some text analysis on some review text. We also made word clouds and looked at how happiness scores for the reviews matches up with the ratings.
+
+[Click here](text-analysis) to see what we did and how we did it.
+
 
 ## Code chunk
 
@@ -20,11 +46,6 @@ import pandas as pd
 df = pd.DataFrame()
 ```
 
-Sed id orci ullamcorper, commodo sapien in, scelerisque nunc. Duis posuere sed nisl in gravida. Pellentesque rutrum justo ut mi tempus dignissim. Ut pulvinar quis urna ut molestie. Pellentesque nec arcu metus. Vivamus non rutrum magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-![](https://source.unsplash.com/random/?Copenhagen)
-
-Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Nam semper venenatis lorem, nec ullamcorper tortor dignissim eget. Etiam non ipsum sed neque pharetra ullamcorper. Praesent ultrices ipsum varius dictum lacinia. Nulla placerat magna augue, volutpat rutrum nulla finibus sed. Phasellus maximus mi sit amet risus mattis, porta rhoncus elit dictum. Donec vel viverra lectus, vitae elementum arcu. Quisque quis molestie elit. Cras eget tellus vitae risus fermentum bibendum vitae ac turpis. Praesent mi eros, scelerisque sit amet sem at, hendrerit accumsan ligula.
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mauris aliquet, convallis ligula vel, mollis est. Fusce accumsan massa vel lectus dapibus, at vehicula elit auctor.
 
@@ -36,4 +57,5 @@ Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Na
 
 ## [Explainer Notebook](explainer-notebook.html)
 
-Aenean non augue vulputate, bibendum ligula ac, euismod arcu. Proin consequat, urna at lobortis sodales, ligula nulla molestie dolor, et interdum nulla arcu eu lacus. Aenean maximus mi vel augue blandit, quis vehicula libero egestas. In mollis nibh in turpis sodales, eget luctus sem pretium. Integer lobortis diam vel nisi laoreet, ut condimentum risus ultrices. Praesent diam risus, imperdiet at lorem in, hendrerit auctor ex.
+To see our code and more in-depth explanations for our methods and visualisations you can see the explainer notebook [here](explainer-notebook.html)
+
