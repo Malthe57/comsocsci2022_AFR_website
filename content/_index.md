@@ -19,7 +19,7 @@ We did this by looking at data of food products with the "Gourmet food and groce
 We used some data! Here it is.
 
 
-[Click here](data-description) for a more in depth description of the data we used
+[Click here](data-description) for a more in depth description of the ***data*** we used
 
 
 
