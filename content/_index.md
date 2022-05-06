@@ -4,7 +4,7 @@ layout: single
 next: data-description
 ---
 
-# Amazon reviews
+# <b>Amazon reviews</b>
 
 Amazon is the largest online retailer in the world. This means that they offer a large variety of products, across many categories, such as books, electronics and even food.
 
@@ -43,9 +43,14 @@ We also take a look at how well the products category can explain which other no
 
 
 ## [Text Analysis](text-analysis)
-We did some text analysis on some review text. We also made word clouds and looked at how happiness scores for the reviews matches up with the ratings.
+In this section we dove into the review text, to find out what people say about products of different categories. To visualise it, several words clouds were made, showing the most signifigant words from reviews of that category. For example, here is the word cloud for the category "Snack Foods":
 
-[Click here](text-analysis) to see what we did and how we did it.
+![](/images/snackfoodcloud.png)
+
+We also took a look at whether the happiness of the review text typically matches the rating given in the same review.
+
+[Click here](text-analysis) to see the full text analysis.
+
 ## [Explainer Notebook](explainer-notebook.html)
 
 To see our code and more in-depth explanations for our methods and visualisations you can see the explainer notebook [here](explainer-notebook.html)
