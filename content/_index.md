@@ -8,14 +8,14 @@ next: data-description
 Amazon is the largest online retailer in the world. This means that they offer a large variety of products, across many categories, such as books, electronics and even food.
 
 Because there are so many products available on Amazon, a consumer needs some information they can use to decide whether or not to buy something. 
-Amazon has both ratings (from 1 to 5, 1 being lowest) and text reviews, given by other comsumers. 
-If a cumstomer decides not to buy a given product, they can always look at some of the many "related products" that are recommended on each products page.
+Amazon has both ratings (from 1 to 5, 1 being lowest) and text reviews, given by other consumers. 
+If a customer decides not to buy a given product, they can always look at some of the many "related products" that are recommended on each product's page.
 
 To better understand the ratings and recommendations of Amazon, we looked into how the "related products" recommendations work as a network as well as the behavior of reviwers on the site. 
-We did this by looking at data of food products with the "Gourmet food and grocery" tag.
+We did this by looking at data of food products with the "Grocery & Gourmet Food" tag.
 
 <b><font size="+2">[Data](data-description)</font></b><br>
-The data on Reviews and products for the "Grocery & Gourmet Foods" section on amazon was collected by researchers from UCSD. We used two datasets, one for the reviews and another for products.
+The data on reviews and products for the "Grocery & Gourmet Food" section on Amazon was collected by researchers from UCSD. We used two datasets, one for the reviews and another for products.
 
 [Click here](data-description) for a more in depth description of the data we used, as well as download links for the datasets.
 
@@ -23,7 +23,7 @@ The data on Reviews and products for the "Grocery & Gourmet Foods" section on am
 One way we have examined the data in, is as a network. We made two networks, one that connects reviewers with other reviewers who reviewed the same product. Another network connects products with its related products.
 
 <b><font size="+1">Reviewer network</font></b><br>
-To see who the most prevalent user-reviewers on amazons "Grocery & Gourmet Food" section is, we have made a network from reviewers, connecting them to other reviewers who have reviewed the same product.
+To see who the most prevalent user-reviewers on Amazon's "Grocery & Gourmet Food" section is, we have made a network from reviewers, connecting them to other reviewers who have reviewed the same product.
 
 ![](/images/reviewer_network.png)
 
@@ -39,7 +39,7 @@ We also take a look at how well the products category can explain which other no
 [Click here](network-analysis) to see how we performed the network analysis and what we found out!
 
 <b><font size="+2">[Text Analysis](text-analysis)</font></b><br>
-In this section we dove into the review text, to find out what people say about products of different categories. To visualise it, several words clouds were made, showing the most signifigant words from reviews of that category. For example, here is the word cloud for the category "Snack Foods":
+In this section we dove into the review text, to find out what people say about products of different categories. To visualise it, several words clouds were made, showing the most significant words from reviews of that category. For example, here is the word cloud for the category "Snack Foods":
 
 <img src="/images/snackfoodcloud.png" alt="wow wee wordcloud" style="width:400px;border:3px solid #3A9A6B;">
 
