@@ -16,7 +16,7 @@ The most interesting part of this food review network is of course the reviews t
 Therefore, the main idea is to use the reviews for sentiment analysis, using the labTM dictionary of happiness scores 😏
 
 The words in the labTM dictionary are rated on a continuous scale from <font color='red'>1 (low happiness)</font> to 
-<font color='#2cbf15'>9 (high happiness)</font>, where a happiness score of <font color='orange'>5</font> indicates <font color='orange'>neutral</font>[^1]. 
+<font color='#2cbf15'>9 (high happiness)</font>, where a happiness score of <font color='E5BD19'>5</font> indicates <font color='E5BD19'>neutral</font>[^1]. 
 [^1]: Reagan et al. (2017): <i> Sentiment analysis methods for
 understanding large-scale texts: a case for
 using continuum-scored words and word
@@ -30,7 +30,7 @@ An example of a review with a high happiness score could be:
 >Fun candy that made a fun gift for my Dad. It was well put together with novelty candies and he enjoyed the gift. fun candy
 
 Looking at the tokens found in the labTM dictionary, we see they are all on the positive side:
-<br>**Overall happiness:** 7.22
+<br>**Overall happiness:** <font color='92E519'> 7.22 </font>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -85,7 +85,7 @@ An example of a review with a low happiness
 >Stale as all get out! Do not buy! Learn from my bad! Do not waste your money! Gag! Ack ! Barf! NASTY!!!
 
 The tokens for this review are quite a bit lower.
-<br>**Overall happiness:** 4.88
+<br>**Overall happiness:** <font color='orange'> 4.88 </font> 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -129,7 +129,7 @@ This is very clear in this positive review:
 <br>**Review:** 
 >but also very temporaryMega heat, without the lasting burn of other sauces, which means I can consume more in less time. Is very insanity
 
-**Overall happiness:** 4.48
+**Overall happiness:** <font color='E57619'> 4.48 </font>
 <br>The tokens <i>heat, burn, without, less, insanity</i> are quite negative, giving the low happiness score of 4.48, 
 even though the reviewer is satisfied with his product.
 
@@ -160,8 +160,20 @@ like "baby, toddler, infant, milk, formula", are used for both negative and posi
 slightly negative correlation is far from significant, however. 
 
 <font size="+2"><b>Wordclouds</b></font> <br>
-Moving on, the term frequencies (TF) and the term frequence-inverse document frequencies (TF-IDF) were calculated for each subcategory 
-in the foodreviews. The words with the highest TF-IDF score are displayed in the wordclouds for the 6 biggest food subcategories:
+The term frequencies (TF) and the term frequence-inverse document frequencies (TF-IDF) were calculated for each subcategory 
+in the foodreviews. TF for a word is a raw measure of which words are most common for each food category. This measure can, however, 
+provide less descriptive words, such as <i>"good"</i>, which has a high TF-score for all food categories. Therefore, the TF-IDF scores are preferred,
+as they put more emphasis on how many food categories contain the word - the fewer categories contain the word, the higher is the contribution from the IDF-part.
+The TF-IDF score for <i>"good"</i> will therefore be zero, as it can be found in each category[^3].
+[^3]: TF-IDF from [Wikipedia](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+
+The words with the highest TF-IDF score are displayed in the wordclouds[^4] for the 6 biggest food subcategories (most products & most review data):
+[^4]: Clipart URLS:
+[burger](https://icon-library.com/icon/at-icon-png-28.html),
+[candy](https://svgsilh.com/image/146690.html), [pacifier](https://www.istockphoto.com/search/2/image?mediatype=illustration&phrase=pacifier),
+ [pan](https://cdn.create.vista.com/api/media/small/193917378/stock-vector-frying-pan-icon-in-flat), 
+ [can](https://t4.ftcdn.net/jpg/02/74/47/29/240_F_274472965_p7RnT0D13PXObI2x033DwTL0l19FJv9y.jpg), 
+ [wine](https://prosteps.cloudimg.io/v7m/resizeinbox/1000x1000/fsharp0/https://tilroy.s3.eu-west-1.amazonaws.com/472/product/14873454940331341306439275.png)
 
 <img src="/images/wordclouds_b.png" alt="wow wee wordcloud" img style="border:3px solid #3A9A6B;">
 
