@@ -24,14 +24,14 @@ The data on Reviews and products for the "Grocery & Gourmet Foods" section on am
 
 ## [Network Analysis](network-analysis)
 One way we have examined the data in, is as a network. We made two networks, one that connects reviewers with other reviewers who reviewed the same product. Another network connects products with its related products.
-#### Reviewer network
+### Reviewer network
 To see who the most prevalent user-reviewers on amazons "Grocery & Gourmet Food" section is, we have made a network from reviewers, connecting them to other reviewers who have reviewed the same product.
 
 ![](/images/reviewer_network.png)
 
 We take a look at node degrees to see who is the top reviewer.
 
-#### Product network
+### Product network
 By creating a network where each product is a node that has edges to its related products, we can see how the products in the "Grocery & Gourmet Food" section connect with each other. 
 
 ![](/images/358notags.png)
