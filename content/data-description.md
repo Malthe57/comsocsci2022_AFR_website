@@ -30,33 +30,74 @@ The metadata dataset contains metadata for 171,761 products in the "Gorcery and 
 - <code>brand </code> - brand name
 - <code>categories </code> - list of categories the product belongs to
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
-
-> Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
-
-Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. 
-
-![](/images/dtu-logo.png)
-
-Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
+The two datasets can be downloaded <a href="http://jmcauley.ucsd.edu/data/amazon/links.html" target=_blank >here</a>
 
 
-1. Lorem ipsum dolor sit amet
-1. Lorem ipsum dolor sit amet
-1. Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. 
-
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-
-In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
-
-Suspendisse non tellus faucibus, dapibus leo at, elementum magna. Fusce quis ante ex. In non ex eleifend, luctus risus quis, dapibus velit. Nulla facilisi. Integer iaculis arcu at fermentum varius. Donec auctor dolor non dolor pulvinar luctus. Mauris vestibulum lacinia nisl, a dictum erat molestie sed. Vivamus vel blandit turpis, nec sollicitudin massa. Nunc velit eros, tristique elementum congue eget, auctor dictum tellus. 
-
-Quisque iaculis, sem quis imperdiet faucibus, nunc lorem feugiat purus, vestibulum condimentum turpis turpis ut ante. Donec vestibulum lectus ut ullamcorper condimentum. Curabitur fermentum nulla vitae arcu sollicitudin pulvinar.
-
-<img src="/images/dtu-logo.png" width="200" />
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eu tellus ut erat porttitor luctus. Vivamus aliquam auctor massa, in auctor orci. Ut quis enim ut lorem consectetur blandit dictum eu mauris.
+Below is a summary of the identified categories that we have worked with, and how many products and review text tokens there are in each category.
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-2qwx{background-color:#ffffff;border-color:#000000;color:#333333;text-align:center;vertical-align:top}
+.tg .tg-mums{background-color:#ffffff;border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-jbyd{background-color:#ffffff;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-vhtn{background-color:#ffffff;border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-2qwx"><span style="font-weight:bold">Category</span></th>
+    <th class="tg-mums"><span style="font-weight:bold">Number of products</span></th>
+    <th class="tg-mums"><span style="font-weight:bold">Number of review tokens</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mums">Baby foods</td>
+    <td class="tg-jbyd">21</td>
+    <td class="tg-vhtn">37,730</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Beverages</td>
+    <td class="tg-jbyd">95</td>
+    <td class="tg-vhtn">72,767</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Breakfast foods</td>
+    <td class="tg-jbyd">14</td>
+    <td class="tg-vhtn">7,766</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Candy &amp; Chocolate</td>
+    <td class="tg-jbyd">23</td>
+    <td class="tg-vhtn">8,798</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Canned</td>
+    <td class="tg-jbyd">61</td>
+    <td class="tg-jbyd">45,528</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Cooking &amp; baking</td>
+    <td class="tg-jbyd">120</td>
+    <td class="tg-jbyd">85,303</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Fresh flowers &amp; Live Indoor Plants</td>
+    <td class="tg-jbyd">1</td>
+    <td class="tg-jbyd">257</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Gourmet gifts</td>
+    <td class="tg-jbyd">1</td>
+    <td class="tg-jbyd">246</td>
+  </tr>
+  <tr>
+    <td class="tg-mums">Snack Foods</td>
+    <td class="tg-jbyd">22</td>
+    <td class="tg-jbyd">12,227</td>
+  </tr>
+</tbody>
+</table>
