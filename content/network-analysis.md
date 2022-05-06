@@ -301,7 +301,7 @@ a binomial distribution (which approximates a Gaussian distribution as the numbe
 For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. 
 According to Barabasi[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients 
 than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the 
-average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient 
+average clustering coefficient for the random network is 0.0393. As expected, the reviewer network has a much higher average clustering coefficient 
 than the random network! 
 [^2]: [Clustering coefficient](http://networksciencebook.com/chapter/3#clustering-3-9)
 
