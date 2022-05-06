@@ -45,7 +45,7 @@ We also take a look at how well the products category can explain which other no
 ## [Text Analysis](text-analysis)
 In this section we dove into the review text, to find out what people say about products of different categories. To visualise it, several words clouds were made, showing the most signifigant words from reviews of that category. For example, here is the word cloud for the category "Snack Foods":
 
-![](/images/snackfoodcloud.png)
+<img src="/images/snackfoodcloud.png" style="width:500px;border:3px solid #3A9A6B;" alt="wow wee wordcloud">
 
 We also took a look at whether the happiness of the review text typically matches the rating given in the same review.
 
