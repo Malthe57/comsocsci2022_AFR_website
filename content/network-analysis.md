@@ -290,4 +290,52 @@ Both networks have around the same average degree, but their distributions vary.
 
 For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^1], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is x, while the average clustering coefficient for the random network is y. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
 
+# <b>Product network</b>
+# Network Analysis
+
+As mentioned in the [Data description](data-description), each product has a list of related products that would be recommended to a user if they were to look at the product on Amazon. Additionally, each product also has the attribute "Categories". We hypothesise that this category attribute can be used to make a partitioning of the products. The products will be nodes in a network, and an edge between the nodes means that one product is a related product to the other. Only products with other category tags than "Grocery & Gourmet Food" were used in the network, so that every note does not belong to the same group.
+
+![](/images/358.png)
+
+The colors represent different categories or groups in the partitioning.
+
+We can take a closer look at some of the products in the network:
+
+One of the more interesting areas is the island containing the product "B0033HGLTG" among others. This particular product is a coffee pad, and thus has the category "Beverages". Interestingly, the product "B009GCXEW4" is not a beverage, while all of its connected nodes appear to be. This product is in the category "Gourmet Gifts" category, and is a coffee pod holder. So while it is very related to the other products on the island, it is not in the same category. This phenomenon shows that related products are not nescessarily of the same category, which will weaken the communities in the network.
+
+We now calculate the modularity of the Category partitioning. The modularity is a measure for the quality of a partitioning, with a high number being good.
+
+The modularity for the category partitioning is 0.4696 rounded to 4 decimals. This value indicates that the category is a decent partitioning, about on par with what we expected it to be. However, by using the Louvain algorithm to find a partitioning we can get a sense of how well the category partitioning actually did.
+
+The Louvain partitioning has a modularity of 0.7591 rounded to 4 decimals.
+
+We would expect it to find better communities than the category partitioning since the modularity is bigger.
+We visualize the network to see:
+
+
+![](/images/358louvain.png)
+
+The most obvious difference is in the presence of nodes like "B009GCXEW4" which is connected to a cluster of mostly "Beverages" category products, but has a different category itself. The absence of these kind of nodes raises the modality of the partitioning. Another impactful change is within the center of the graph, where the nodes have been more cleanly split into groups, compared to the original graph where nodes with the "Beverages" category and the "Cooking & Baking" category were shuffled together.
+
+It is quite clear that there is some overlap between communities in the two partitionings. As such, we want to make a confusion matrix to see which Louvain groups contain which categories.
+
+![](/images/confusion358.png)
+
+Making a confusion matrix for the two partitionings yeilds this somewhat incomprehensible table, since the Louvain split has 69 bins. This is due to the singleton nodes(the nodes that are not connected with any other nodes) each having their own group. Since singleton nodes are not particularly interesting for community analysis, and since they do not affect the modularity of a partitioning, the next step is to remove them all.
+
+After doing this we get the following network for the category partitioning:
+
+![](/images/306.png)
+
+There are no changes to the communities(except the colors, which do not matter) with connections. As stated earlier the modularity does not change, since it only takes into account nodes that have edges. 
+
+The louvain partitioning network looks like this:
+
+![](/images/306louvain.png)
+
+And with that we can create a more readable confusion matrix:
+
+![](/images/confusion306.png)
+
+Some of the large categories like "Cooking & Baking" are separated into multiple communities in the louvain split. This is likely due to them being shuffled in "Canned" and "Beverages" in the most dense areas of the network. Since the louvain split jsut wants the most interconnected communities, it makes sense that these categories would not stay intact. Conversely, the baby food category is all contained in a single Louvain community. This is due to it already being isolated in the category partitioning. In the Louvain partitioning, the baby food product now share community with 2 "Beverage" products and a "Canned" product. Likewise, there is also a "Beverage" island contained in Louvain community 14, with a single "Gourmet Gifts" product and a single "Candy & Chocolate" product.
 [^1]: http://networksciencebook.com/chapter/3#clustering-3-9
