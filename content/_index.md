@@ -4,7 +4,7 @@ layout: single
 next: data-description
 ---
 
-# Amazon reviews
+# <b>Amazon reviews</b>
 
 Amazon is the largest online retailer in the world. This means that they offer a large variety of products, across many categories, such as books, electronics and even food.
 
