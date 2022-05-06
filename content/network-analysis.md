@@ -7,7 +7,7 @@ next: text-analysis
 We created and investigated two networks: One for the reviewer and one for the products.
 
 
-# <b> Reviewer network </b>
+<b><font size="+2"> Reviewer network</font></b><br>
 The goal is to identify the so-called super users on Amazon; users who especially active and write many reviews on Amazon. 
 
 The review network consists of 14,681 nodes and 4,228,404 edges. Due to the sheer size of the network, it is only possible to visualise a subset. The subset consists of reviewers for 500 unique, randomly sampled products, so the resulting network has a total of 5,773 nodes and 229,767 edges. 
@@ -221,8 +221,7 @@ The user with the highest number of reviews and node degree is C. Hill "CFH". Ho
 
 In conclusion, the reviewer network can be useful to identify some super users. However, the number of times a product has been reviewed needs to be accounted for, since it has a major impact on the node degree.
 
-## <b> Random network </b>
-
+<b><font> Random network</font></b><br>
 The reviewer network is an example of a real-world network constructed using real data. We would like to construct a random network that has some of the same properties as the reviewer network, and then compare them. The random network consists of the same number of nodes, and with a probability p=0.0392, an edge is established between two independent nodes. Some summary statistics of the two networks are listed below in the table below.
 
 <style type="text/css">
@@ -289,15 +288,24 @@ We can look at the degree distributions of the two networks.
     <img src="/images/random_distribution.png" alt="Forest" style="width:100%">
   </div>
 </div>
-Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than median degree of the random network. On the other hand, the degree distribution for the random network has an almost identical mean and median, and it closely closely resembles a Gaussian distribution. According to [^3], the degree distribution of a random network should follow a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
 
-[^3] http://networksciencebook.com/chapter/3#degree-distribution
+Both networks have around the same average degree, but their distributions vary. 
+The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left,
+ indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, 
+which is much lower than median degree of the random network. 
+On the other hand, the degree distribution for the random network has an almost identical mean and median, 
+and it closely closely resembles a Gaussian distribution. According to[^1], the degree distribution of a random network should follow 
+a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
+[^1]: [Degree distribution](http://networksciencebook.com/chapter/3#degree-distribution)
 
-For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabasi[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
-[^2]: http://networksciencebook.com/chapter/3#clustering-3-9
+For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. 
+According to Barabasi[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients 
+than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the 
+average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient 
+than the random network! 
+[^2]: [Clustering coefficient](http://networksciencebook.com/chapter/3#clustering-3-9)
 
-# <b>Product network</b>
-
+<b><font size="+2"> Product network</font></b><br>
 As mentioned in the [Data description](data-description), each product has a list of related products that would be recommended to a user if they were to look at the product on Amazon. Additionally, each product also has the attribute "Categories". We hypothesise that this category attribute can be used to make a partitioning of the products. The products will be nodes in a network, and an edge between the nodes means that one product is a related product to the other. Only products with other category tags than "Grocery & Gourmet Food" were used in the network, so that every note does not belong to the same group.
 
 ![](/images/network_cats_tags.png)
