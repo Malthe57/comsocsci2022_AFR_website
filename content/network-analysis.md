@@ -233,7 +233,7 @@ Below we have a table for the four identified reviewers + the top 3 reviewers. F
 </tbody>
 </table>
 
-The user with the highest number of reviews and node degree is C. Hill "CFH". However, writing many reviews does not equate to having a high node degree. For instance, the user "Gary Peterson" has written the second most reviews with 180, yet only have a node degree of 2,374. Comparatively, another user, "bsg2004" have only written 75 reviews, but have a much higher node degree of 3,701. Based on the average review score, we see that even though the users "Gary Peterson" and "NYFB" have written many reviews, the products that they review are not commonly reviewed by others. 
+The user with the highest number of reviews and node degree is C. Hill "CFH". However, writing many reviews does not equate to having a high node degree in the network. For instance, the user "Gary Peterson" has written the second most reviews with 180, yet only has a node degree of 2,374. Comparatively, another user, "bsg2004" has only written 75 reviews, but has a much higher node degree of 3,701. Based on the average review score, we see that even though the users "Gary Peterson" and "NYFB" have written many reviews, the products that they review are not commonly reviewed by others. 
 
 In conclusion, the reviewer network can be useful to identify some super users. However, the number of times a product has been reviewed needs to be accounted for, since it has a major impact on the node degree.
 
@@ -311,14 +311,14 @@ The degree distribution for the reviewer network is much more spread out, with d
  indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, 
 which is much lower than median degree of the random network. 
 On the other hand, the degree distribution for the random network has an almost identical mean and median, 
-and it closely closely resembles a Gaussian distribution. According to[^1], the degree distribution of a random network should follow 
+and it closely resembles a Gaussian distribution. According to[^1], the degree distribution of a random network should follow 
 a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
 [^1]: [Degree distribution](http://networksciencebook.com/chapter/3#degree-distribution)
 
 For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. 
 According to Barabasi[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients 
 than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the 
-average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient 
+average clustering coefficient for the random network is 0.0393. As expected, the reviewer network has a much higher average clustering coefficient 
 than the random network! 
 [^2]: [Clustering coefficient](http://networksciencebook.com/chapter/3#clustering-3-9)
 
