@@ -294,7 +294,7 @@ The degree distribution for the reviewer network is much more spread out, with d
  indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, 
 which is much lower than median degree of the random network. 
 On the other hand, the degree distribution for the random network has an almost identical mean and median, 
-and it closely closely resembles a Gaussian distribution. According to[^1], the degree distribution of a random network should follow 
+and it closely resembles a Gaussian distribution. According to[^1], the degree distribution of a random network should follow 
 a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
 [^1]: [Degree distribution](http://networksciencebook.com/chapter/3#degree-distribution)
 
