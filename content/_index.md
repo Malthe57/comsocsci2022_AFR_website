@@ -34,7 +34,7 @@ We take a look at node degrees to see who is the top reviewer.
 ### Product network
 By creating a network where each product is a node that has edges to its related products, we can see how the products in the "Grocery & Gourmet Food" section connect with each other. 
 
-![](/images/358notags.png)
+![](/images/network_cats.png)
 
 We also take a look at how well the products category can explain which other nodes it is connected to, and see how it compares to communities partitioned by the Louvain algorithm.
 
