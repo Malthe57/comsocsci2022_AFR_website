@@ -4,13 +4,13 @@ prev: data-description
 next: text-analysis
 ---
 
-We created and investigated two networks: One for the reviewers and one for the products.
+We created and investigated two networks: One for the reviewer and one for the products.
 
 
 # <b> Reviewer network </b>
 The goal is to identify the so-called super users on Amazon; users who especially active and write many reviews on Amazon. 
 
-The review network is a undirected, weighted network which consists of 14,681 nodes and 4,228,404 edges. Due to the sheer size of the network, it is only possible to visualise a subset. The subset consists of reviewers for 500 unique, randomly sampled products, so the resulting network has a total of 5,773 nodes and 229,767 edges. 
+The review network consists of 14,681 nodes and 4,228,404 edges. Due to the sheer size of the network, it is only possible to visualise a subset. The subset consists of reviewers for 500 unique, randomly sampled products, so the resulting network has a total of 5,773 nodes and 229,767 edges. 
 <img src="/images/reviewer_network.png" width="1400" />
 From the graph, we have identified some nodes with highest degree (largest nodes) which we can look further into:
 <style type="text/css">
@@ -252,22 +252,22 @@ The reviewer network is an example of a real-world network constructed using rea
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Edges</span></td>
     <td class="tg-jbyd">4,228,404</td>
-    <td class="tg-vhtn">4,228,318</td>
+    <td class="tg-vhtn">4,229,033</td>
   </tr>
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Min. degree</span></td>
     <td class="tg-jbyd">8</td>
-    <td class="tg-vhtn">488</td>
+    <td class="tg-vhtn">492</td>
   </tr>
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Max. degree</span></td>
     <td class="tg-jbyd">5155</td>
-    <td class="tg-vhtn">667</td>
+    <td class="tg-vhtn">673</td>
   </tr>
   <tr>
     <td class="tg-tgze">Mean degree</td>
     <td class="tg-jbyd">576.038</td>
-    <td class="tg-jbyd">576.026</td>
+    <td class="tg-jbyd">576.12</td>
   </tr>
   <tr>
     <td class="tg-tgze">Median degree</td>
@@ -288,16 +288,16 @@ We can look at the degree distributions of the two networks.
 </div>
 Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than median degree of the random network.
 
-For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^1], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
+For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^1], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is x, while the average clustering coefficient for the random network is y. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
 
 # <b>Product network</b>
 # Network Analysis
 
 As mentioned in the [Data description](data-description), each product has a list of related products that would be recommended to a user if they were to look at the product on Amazon. Additionally, each product also has the attribute "Categories". We hypothesise that this category attribute can be used to make a partitioning of the products. The products will be nodes in a network, and an edge between the nodes means that one product is a related product to the other. Only products with other category tags than "Grocery & Gourmet Food" were used in the network, so that every note does not belong to the same group.
 
-![](/images/358.png)
+![](/images/network_cats_tags.png)
 
-The colors represent different categories or groups in the partitioning.
+The colors represent different categories or groups in the partitioning. The plots have circles some nodes which belong to the categories they represent.
 
 We can take a closer look at some of the products in the network:
 
