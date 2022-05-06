@@ -30,7 +30,7 @@ The metadata dataset contains metadata for 171,761 products in the "Gorcery and 
 - <code>brand </code> - brand name
 - <code>categories </code> - list of categories the product belongs to
 
-The two datasets can be downloaded <a href="http://jmcauley.ucsd.edu/data/amazon/links.html" target=_blank >here</a>
+The two datasets can be downloaded <a href="http://jmcauley.ucsd.edu/data/amazon/links.html" target=_blank >here.</a>
 
 
 Below is a summary of the identified categories that we have worked with, and how many products and review text tokens there are in each category.
