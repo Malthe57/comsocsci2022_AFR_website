@@ -252,22 +252,22 @@ The reviewer network is an example of a real-world network constructed using rea
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Edges</span></td>
     <td class="tg-jbyd">4,228,404</td>
-    <td class="tg-vhtn">4,229,033</td>
+    <td class="tg-vhtn">4,230,386</td>
   </tr>
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Min. degree</span></td>
     <td class="tg-jbyd">8</td>
-    <td class="tg-vhtn">492</td>
+    <td class="tg-vhtn">480</td>
   </tr>
   <tr>
     <td class="tg-jbyd"><span style="font-weight:bold">Max. degree</span></td>
     <td class="tg-jbyd">5155</td>
-    <td class="tg-vhtn">673</td>
+    <td class="tg-vhtn">672</td>
   </tr>
   <tr>
     <td class="tg-tgze">Mean degree</td>
     <td class="tg-jbyd">576.038</td>
-    <td class="tg-jbyd">576.12</td>
+    <td class="tg-jbyd">576.308</td>
   </tr>
   <tr>
     <td class="tg-tgze">Median degree</td>
@@ -280,15 +280,15 @@ The reviewer network is an example of a real-world network constructed using rea
 We can look at the degree distributions of the two networks.
 <div class="row">
   <div class="column">
-    <img src="/images/review_distribution.png" alt="Snow" style="width:100%">
+    <img src="/images/review_distribution.png" alt="1" style="width:100%">
   </div>
   <div class="column">
-    <img src="/images/random_distribution.png" alt="Forest" style="width:100%">
+    <img src="/images/random_distribution.png" alt="2" style="width:100%">
   </div>
 </div>
-Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than median degree of the random network.
+Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than the median degree of the random network.
 
-For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^1], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is x, while the average clustering coefficient for the random network is y. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
+For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^1], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the average clustering coefficient for the random network is 0.0393. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
 
 # <b>Product network</b>
 # Network Analysis
