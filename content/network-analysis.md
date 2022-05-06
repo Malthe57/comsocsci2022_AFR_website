@@ -289,9 +289,12 @@ We can look at the degree distributions of the two networks.
     <img src="/images/random_distribution.png" alt="Forest" style="width:100%">
   </div>
 </div>
-Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than median degree of the random network. On the other hand, the degree distribution for the random network has an almost identical mean and median, and it closely closely resembles a Gaussian distribution. According to [^1], the degree distribution should follow a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
+Both networks have around the same average degree, but their distributions vary. The degree distribution for the reviewer network is much more spread out, with degrees ranging from 8 to 5155, and skewed towards the left, indicating that smaller degrees are the most frequent. This is reflected in the median degree of the reviewer network, which is much lower than median degree of the random network. On the other hand, the degree distribution for the random network has an almost identical mean and median, and it closely closely resembles a Gaussian distribution. According to [^3], the degree distribution of a random network should follow a binomial distribution (which approximates a Gaussian distribution as the number of samples goes towards infinity).
 
-For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabási[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
+[^3] http://networksciencebook.com/chapter/3#degree-distribution
+
+For both networks we can compute the average clustering coefficient, which is a measure of the degree to which nodes tend to cluster together. According to Barabasi[^2], one would expect a real-life network with N nodes and L edges to have much higher clustering coefficients than a random network of similar size. The average clustering coefficient for the reviewer network is 0.405, while the average clustering coefficient for the random network is 0.039. As expected, the reviewer network has a much higher average clustering coefficient than the random network! 
+[^2]: http://networksciencebook.com/chapter/3#clustering-3-9
 
 # <b>Product network</b>
 
@@ -340,5 +343,3 @@ And with that we can create a more readable confusion matrix:
 ![](/images/confusion306.png)
 
 Some of the large categories like "Cooking & Baking" are separated into multiple communities in the louvain split. This is likely due to them being shuffled in "Canned" and "Beverages" in the most dense areas of the network. Since the louvain split just wants the most interconnected communities, it makes sense that these categories would not stay intact. Conversely, the baby food category is all contained in a single Louvain community. This is due to it already being isolated in the category partitioning. In the Louvain partitioning, the baby food product now share community with 2 "Beverage" products and a "Canned" product. Likewise, there is also a "Beverage" island contained in Louvain community 14, with a single "Gourmet Gifts" product and a single "Candy & Chocolate" product.
-[^1]: http://networksciencebook.com/chapter/3#clustering-3-9
-[^2]: http://networksciencebook.com/chapter/3#degree-distribution
