@@ -9,7 +9,7 @@ next: data-description
 Amazon is the largest online retailer in the world. This means that they offer a large variety of products, across many categories, such as books, electronics and even food.
 
 Because there are so many products available on Amazon, a consumer needs a few metrics they can use to decide whether or not to buy something. 
-Amazon has both ratings (in stars out of 5) and text reviews, given by other comsumers. 
+Amazon has both ratings (from 1 to 5, 1 being lowest) and text reviews, given by other comsumers. 
 If a cumstomer decides not to buy a given product, they can always look at some of the many "related products" that are recommended on each products page.
 
 To better understand the ratings and recommendations of Amazon, we looked into how the "related products" recommendations work as a network as well as the behavior of reviwers on the site. 
@@ -26,7 +26,10 @@ We used some data! Here it is.
 
 ## [Network Analysis](network-analysis)
 We did some network analysis. We made two networks from the data using the networkx package and looked at community modality.
-We also made Louvain communities and compared them with the category-communities
+We also made Louvain communities and compared them with the category-communities.
+
+![](/images/358notags.png)
+
 
 [Click here](network-analysis) to see what we did and how we did it.
 
@@ -36,7 +39,6 @@ We also made Louvain communities and compared them with the category-communities
 We did some text analysis on some review text. We also made word clouds and looked at how happiness scores for the reviews matches up with the ratings.
 
 [Click here](text-analysis) to see what we did and how we did it.
-
 
 ## Code chunk
 
